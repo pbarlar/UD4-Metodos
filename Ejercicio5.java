@@ -12,13 +12,13 @@ public class Ejercicio5 {
         for (int i = a.length; i < ab.length; i++) {
             ab[i]=b[i-a.length];
         }
-        return Arrays.asList(ab);
+        return ab;
     }
     
     
     public static void main(String[] args) {
         int[] a={8,9,0};
         int[] b={1,2,3};
-        System.out.println(concatena(a, b));
+        System.out.println(Arrays.toString(concatena(a, b)));
     }
 }
